@@ -1,0 +1,37 @@
+<?xml version="1.0" standalone="no"?>
+<!--Created with Sketsa SVG Editor (http://www.kiyut.com)-->
+<svg contentScriptType="text/ecmascript" width="600.0px" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full"
+    zoomAndPan="magnify" contentStyleType="text/css" height="600.0px" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
+    version="1.0">
+    <polyline fill="none" points="107.0,142.0 130.0,142.0 130.0,60.0 514.0,60.0 514.0,436.0 132.0,436.0 132.0,216.0 
+        115.0,216.0 107.0,216.0" stroke="#000000"/>
+    <rect name="消防水池" fill="none" x="130.0" width="35.0" y="60.0" height="35.0" stroke="#000000"/>
+    <rect name="水泵房" fill="none" x="184.0" width="28.0" y="60.0" height="28.0" stroke="#000000"/>
+    <rect name="门卫、地磅房" fill="none" x="130.0" width="133.0" y="112.0" height="30.0" stroke="#000000"/>
+    <rect name="1#粮食平仓房" fill="none" x="276.0" width="152.0" y="73.0" height="105.0" stroke="#000000"/>
+    <rect fill="none" x="461.0" width="47.0" y="171.0" height="47.0" stroke="#000000"/>
+    <rect name="仓库2" fill="none" x="461.0" width="47.0" y="221.0" height="47.0" stroke="#000000"/>
+    <rect fill="none" x="459.0" width="49.0" y="270.0" height="49.0" stroke="#000000"/>
+    <rect fill="none" x="459.0" width="48.0" y="323.0" height="48.0" stroke="#000000"/>
+    <rect name="地磅" fill="none" x="275.0" width="78.0" y="212.0" height="33.0" stroke="#000000"/>
+    <rect name="2#粮食平仓房" fill="none" x="276.0" width="156.0" y="263.0" height="99.0" stroke="#000000"/>
+    <rect name="仓库1" fill="none" x="191.0" width="253.0" y="380.0" height="47.0" stroke="#000000"/>
+    <line y2="427.0" fill="none" x1="237.0" x2="237.0" y1="380.0" stroke="#000000"/>
+    <line y2="428.0" fill="none" x1="274.0" x2="274.0" y1="381.0" stroke="#000000"/>
+    <line y2="427.0" fill="none" x1="316.0" x2="316.0" y1="380.0" stroke="#000000"/>
+    <line y2="426.0" fill="none" x1="364.0" x2="364.0" y1="381.0" stroke="#000000"/>
+    <line y2="428.0" fill="none" x1="402.0" x2="402.0" y1="382.0" stroke="#000000"/>
+    <text x="314.0" y="133.0"><tspan xml:space="preserve">1#粮食平仓房</tspan></text>
+    <text x="320.0" y="318.0"><tspan xml:space="preserve">2#粮食平仓房</tspan></text>
+    <text x="297.0" y="408.0"><tspan xml:space="preserve">仓库1</tspan></text>
+    <text x="468.0" y="273.0"><tspan xml:space="preserve">仓库2</tspan></text>
+    <text x="297.0" y="232.0"><tspan xml:space="preserve">地磅</tspan></text>
+    <text x="147.0" y="131.0"><tspan xml:space="preserve">门卫、地磅房</tspan></text>
+    <text x="129.0" y="105.0"><tspan xml:space="preserve">消防水池</tspan></text>
+    <text x="180.0" y="105.0"><tspan xml:space="preserve">水泵房</tspan></text>
+    <text x="72.0" y="170.0"><tspan xml:space="preserve">大门</tspan></text>
+    <image x="77.0" y="39.0" width="16" xlink:href="bei.png"
+        height="16" preserveAspectRatio="none"/>
+    <text x="77.0" y="74.0"><tspan xml:space="preserve">北 </tspan></text>
+    <text x="139.0" y="45.0"><tspan xml:space="preserve"> </tspan></text>
+</svg>
