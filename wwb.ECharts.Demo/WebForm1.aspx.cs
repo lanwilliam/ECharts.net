@@ -55,7 +55,7 @@ namespace wwb.ECharts.Demo
 
 
             Series s1 = new Series();
-            s1.Data = "";
+            s1.Data = new string[0];
             s1.Name = "group1";
             s1.ItemStyle = new ItemStyle();
             s1.ItemStyle.Normal = new Normal();
@@ -100,7 +100,7 @@ namespace wwb.ECharts.Demo
 
 
             Series s2 = new Series();
-            s2.Data = "";
+            s2.Data = new string[0];
             s2.Type = EChartsTypes.Map;
             s2.MarkPoint = new MarkPoint();
             s2.MarkPoint.Effect = new Effect();

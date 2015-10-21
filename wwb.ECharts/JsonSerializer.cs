@@ -55,7 +55,7 @@ namespace wwb.ECharts
             }
 
             // 系统enum数组识别为int[] 这里做了特殊处理
-            if (obj is SymbolType[])
+            if (obj.GetType()== typeof(SymbolType[]))
             {
                 return string.Format(useCurlyBracketsForObject ? JSON_NUMBER_ARRAY : JSON_DEFAULT_FORMAT, String.Join(", ", from SymbolType item in obj select GetValue(item, item.GetType(), GetJsonFormatter(null))));
                 
@@ -121,7 +121,7 @@ namespace wwb.ECharts
                 {
                     Type propertyType = property.PropertyType;
                     string propertyName = GetPropertyName(property);
-                    if (propertyName == "Formatter")
+                    if (propertyName == "Data")
                     {
 
                     }

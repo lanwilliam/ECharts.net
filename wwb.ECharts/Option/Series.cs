@@ -199,14 +199,19 @@ namespace wwb.ECharts.Option
         /// 标注点属性
         /// </summary>
         public MarkPoint MarkPoint
-        { set; get; }
-
+        {
+            set;
+            get;
+        }
 
         /// <summary>
         /// 标注线条属性
         /// </summary>
         public MarkLine MarkLine
-        { set; get; }
+        {
+            set;
+            get;
+        }
 
         /// <summary>
         /// 以数组形式返回对象，方便单个对象使用

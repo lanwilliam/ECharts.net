@@ -84,10 +84,19 @@ namespace wwb.ECharts.Option
         public Color?[] Color
         { get; set; }
 
+        private Feature feature;
         /// <summary>
         /// 启用工具箱按钮设置
         /// </summary>
         public Feature Feature
-        { set; get; }
+        { 
+            set { this.feature = value; }
+            get
+            {
+                if (this.feature == null)
+                    this.feature = new Feature();
+                return this.feature;
+            }
+        }
     }
 }

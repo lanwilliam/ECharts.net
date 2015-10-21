@@ -25,7 +25,7 @@ namespace wwb.ECharts.Option
         /// <summary>
         /// 'outer'	   标签显示位置，可选为：'outer'（外部） | 'inner'（内部），地图标签不可指定位置
         /// </summary>
-        public LabelPositionType Position
+        public LabelPositionType? Position
         { get; set; }
 
         /// <summary>

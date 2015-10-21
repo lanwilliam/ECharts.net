@@ -103,5 +103,17 @@ namespace wwb.ECharts.Option
         /// </summary>
         public string[] Data
         { get; set; }
+
+        private Label axisLabel;
+        /// <summary>
+        /// 坐标轴文本标签（详见axis.axislabel） 
+        /// 属性formatter可以格式化文本标签， 
+        /// 属性textStyle（详见textStyle）控制文本样式
+        /// </summary>
+        public Label AxisLabel
+        {
+            set;
+            get;
+        }
     }
 }
