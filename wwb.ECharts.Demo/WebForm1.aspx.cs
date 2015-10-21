@@ -49,7 +49,7 @@ namespace wwb.ECharts.Demo
 
             wwb.ECharts.Option.ToolTip tt = new wwb.ECharts.Option.ToolTip();
             tt.Trigger = TriggerType.Item;
-            tt.Formatter = "{b}";
+            tt.Formatter = new StringFormatter("{b}");
             chart.SetToolTip(tt);
 
 

@@ -121,12 +121,27 @@ namespace wwb.ECharts
                 {
                     Type propertyType = property.PropertyType;
                     string propertyName = GetPropertyName(property);
+                    if (propertyName == "Formatter")
+                    {
 
+                    }
                     string value;
                     if (propertyType == typeof(Array) || propertyType.BaseType == typeof(Array) || propertyValue is Array)
                         value = GetJsonArray(propertyValue as Array, formatter.UseCurlyBracketsForObject);
                     else if (propertyType.IsGenericType && propertyType.GetGenericTypeDefinition() == typeof(Nullable<>))
                         value = GetValue(propertyValue, propertyType.GetGenericArguments()[0], formatter);
+                    else if (propertyType == typeof(StringFormatter))
+                    {
+                        StringFormatter sf = (StringFormatter)propertyValue;
+                        if (sf.isFunction)
+                            value = sf.Formatter;
+                        else
+                            value = string.Format("'{0}'",sf.Formatter);
+                    }
+                    else if(propertyType == typeof(BoundaryGapType))
+                    {
+                        value = ((BoundaryGapType)propertyValue).Value;
+                    }
                     else
                         value = GetValue(propertyValue, propertyType, formatter);
 
@@ -161,7 +176,7 @@ namespace wwb.ECharts
                 return GetEnumString(formatter.JsonValueFormat, type, value);
             if ((type.BaseType != null && type.BaseType == typeof(object)) || type.IsClass)
                 return GetJsonString(formatter.JsonValueFormat, JSON_DEFAULT_FORMAT, GetJsonObject(value, formatter.UseCurlyBracketsForObject));
-
+            
             throw new NotImplementedException("Not implemented serialization for type: " + type.Name);
         }
 

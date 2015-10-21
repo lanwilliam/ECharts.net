@@ -46,6 +46,7 @@
     <Compile Include="Attributes\NameAttribute.cs" />
     <Compile Include="EChart.cs" />
     <Compile Include="EChartsCtrl.cs" />
+    <Compile Include="Entity\KLineList.cs" />
     <Compile Include="Entity\PaiDataItem.cs" />
     <Compile Include="Enums\AreaStyleType.cs" />
     <Compile Include="Enums\AxisType.cs" />
@@ -68,6 +69,8 @@
     <Compile Include="Enums\XAlign.cs" />
     <Compile Include="Enums\YAlign.cs" />
     <Compile Include="Extensions.cs" />
+    <Compile Include="Helpers\BoundaryGapType.cs" />
+    <Compile Include="Helpers\StringFormatter.cs" />
     <Compile Include="Helpers\JsonFormatter.cs" />
     <Compile Include="Helpers\Number.cs" />
     <Compile Include="Helpers\PercentageOrPixel.cs" />
@@ -75,9 +78,11 @@
     <Compile Include="JsonSerializer.cs" />
     <Compile Include="Option\AreaStyle.cs" />
     <Compile Include="Option\Axis.cs" />
+    <Compile Include="Option\AxisTick.cs" />
     <Compile Include="Option\Categories.cs" />
     <Compile Include="Option\Effect.cs" />
     <Compile Include="Option\Emphasis.cs" />
+    <Compile Include="Option\SplitLine.cs" />
     <Compile Include="Option\ToolBoxButton\DataZoom .cs" />
     <Compile Include="Option\ToolBoxButton\Feature.cs" />
     <Compile Include="Option\Grid.cs" />

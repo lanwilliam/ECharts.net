@@ -43,7 +43,7 @@ namespace wwb.ECharts.Option
         /// <summary>
         /// 类目起始和结束两端空白策略，见下图，默认为true留空，false则顶头
         /// </summary>
-        public bool? BoundaryGap
+        public BoundaryGapType BoundaryGap
         { get; set; }
 
         /// <summary>
@@ -88,7 +88,15 @@ namespace wwb.ECharts.Option
         public Number? SplitNumber
         { get; set; }
 
-        
+        /// <summary>
+        /// 坐标轴小标记
+        /// </summary>
+        public AxisTick axisTick { set; get; }
+
+        /// <summary>
+        /// 分隔线
+        /// </summary>
+        public SplitLine splitLine { set; get; }
 
         /// <summary>
         /// 类目型坐标轴文本标签数组，指定label内容。 数组项通常为文本
