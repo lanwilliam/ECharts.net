@@ -92,7 +92,7 @@ namespace wwb.ECharts.Option
         /// 坐标轴小标记
         /// </summary>
         public AxisTick axisTick { set; get; }
-
+        
         /// <summary>
         /// 分隔线
         /// </summary>

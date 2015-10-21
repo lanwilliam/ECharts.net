@@ -176,7 +176,7 @@ namespace wwb.ECharts
                 return GetEnumString(formatter.JsonValueFormat, type, value);
             if ((type.BaseType != null && type.BaseType == typeof(object)) || type.IsClass)
                 return GetJsonString(formatter.JsonValueFormat, JSON_DEFAULT_FORMAT, GetJsonObject(value, formatter.UseCurlyBracketsForObject));
-            
+
             throw new NotImplementedException("Not implemented serialization for type: " + type.Name);
         }
 
