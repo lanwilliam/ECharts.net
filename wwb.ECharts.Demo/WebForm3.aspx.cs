@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using wwb.ECharts.Entity;
+using wwb.ECharts.Helpers;
 using wwb.ECharts.Option;
 namespace wwb.ECharts.Demo
 {
@@ -20,7 +21,9 @@ namespace wwb.ECharts.Demo
 
             ToolTip tt = new ToolTip();
             tt.Trigger = Enums.TriggerType.Item;
-            tt.Formatter = "{a} <br/>{b} : {c} ({d}%)";
+            StringFormatter sf = new StringFormatter();
+            sf.Formatter="{a} <br/>{b} : {c} ({d}%)";
+            tt.Formatter = sf;
             EChartsCtrl1.chart.SetToolTip(tt);
 
             Legend legend = new Legend();

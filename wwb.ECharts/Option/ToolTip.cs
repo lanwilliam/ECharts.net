@@ -32,7 +32,7 @@ namespace wwb.ECharts.Option
         /// <summary>
         /// null 内容格式器：{string}（Template） | {Function}，支持异步回调见表格下方
         /// </summary>
-        public string Formatter
+        public StringFormatter Formatter
         { get; set; }
 
         /// <summary>

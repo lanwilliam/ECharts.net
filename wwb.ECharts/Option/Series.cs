@@ -207,5 +207,17 @@ namespace wwb.ECharts.Option
         /// </summary>
         public MarkLine MarkLine
         { set; get; }
+
+        /// <summary>
+        /// 以数组形式返回对象，方便单个对象使用
+        /// 请根据情况使用
+        /// </summary>
+        /// <returns></returns>
+        public Series[] ToArray()
+        {
+            Series[] arr = new Series[1];
+            arr[0] = this;
+            return arr;
+        }
     }
 }
