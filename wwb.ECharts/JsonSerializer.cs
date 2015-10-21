@@ -121,10 +121,7 @@ namespace wwb.ECharts
                 {
                     Type propertyType = property.PropertyType;
                     string propertyName = GetPropertyName(property);
-                    if (propertyName == "Data")
-                    {
-
-                    }
+                    
                     string value;
                     if (propertyType == typeof(Array) || propertyType.BaseType == typeof(Array) || propertyValue is Array)
                         value = GetJsonArray(propertyValue as Array, formatter.UseCurlyBracketsForObject);
